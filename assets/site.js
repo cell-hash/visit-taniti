@@ -1,4 +1,4 @@
-/* Visit Taniti prototype behaviour: mobile menu, FAQ accordion, lodging and
+/* Visit Taniti prototype behavior: mobile menu, FAQ accordion, lodging and
    dining filters, and the booking and contact forms. No dependencies. */
 
 (function () {

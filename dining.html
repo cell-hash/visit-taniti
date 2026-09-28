@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dining and groceries on Taniti | Visit Taniti</title>
+<meta name="description" content="The island's ten restaurants by cuisine, plus supermarkets, grocery stores, and the 24-hour convenience store.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html"><span class="brand-mark">T</span>Visit Taniti</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-bars" aria-hidden="true"></span> Menu
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="things-to-do.html">Things to Do</a></li>
+          <li><a href="where-to-stay.html">Where to Stay</a></li>
+          <li><a href="dining.html" class="is-current" aria-current="page">Dining</a></li>
+          <li><a href="getting-around.html">Getting Around</a></li>
+          <li><a href="essentials.html">Travel Essentials</a></li>
+          <li><a href="book.html">Book Your Trip</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero hero-small">
+  <div class="wrap">
+    <h1>Dining and groceries</h1>
+    <p class="lead">Ten restaurants on the island: five serving mostly local fish and rice, three American style, and two Pan-Asian.</p>
+    
+  </div>
+</section>
+<section class="wrap section">
+  <form class="filters" id="dining-filters" aria-label="Filter restaurants">
+    <div class="field">
+      <label for="cuisine-filter">Cuisine</label>
+      <select id="cuisine-filter">
+        <option value="all">All cuisines</option>
+        <option value="local">Local fish and rice</option>
+        <option value="american">American style</option>
+        <option value="asian">Pan-Asian</option>
+      </select>
+    </div>
+    <p class="filter-count" id="dining-count" role="status"></p>
+  </form>
+  <div class="stack" id="dining-list">
+      <article class="card card-row restaurant" data-cuisine="local">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M9 3h2v10H9zM6 3h2v7H6zM12 3h2v7h-2zM9 13h2v16H9z"/><path d="M21 3c3 0 5 3 5 7s-2 6-4 6v13h-2V16c-2 0-4-2-4-6s2-7 5-7z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Harbor Table</h3>
+            <p class="rate">$$</p>
+          </div>
+          <p class="meta">Local fish and rice · Taniti City</p>
+          <p>Fish landed the same morning, served with rice. The city's best-known dining room.</p>
+        </div>
+      </article>
+      <article class="card card-row restaurant" data-cuisine="local">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M9 3h2v10H9zM6 3h2v7H6zM12 3h2v7h-2zM9 13h2v16H9z"/><path d="M21 3c3 0 5 3 5 7s-2 6-4 6v13h-2V16c-2 0-4-2-4-6s2-7 5-7z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Yellow Leaf Fish House</h3>
+            <p class="rate">$$</p>
+          </div>
+          <p class="meta">Local fish and rice · Yellow Leaf Bay</p>
+          <p>Grilled local fish and rice on a terrace above the bay.</p>
+        </div>
+      </article>
+      <article class="card card-row restaurant" data-cuisine="local">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M9 3h2v10H9zM6 3h2v7H6zM12 3h2v7h-2zM9 13h2v16H9z"/><path d="M21 3c3 0 5 3 5 7s-2 6-4 6v13h-2V16c-2 0-4-2-4-6s2-7 5-7z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Rice and Reef</h3>
+            <p class="rate">$</p>
+          </div>
+          <p class="meta">Local fish and rice · Taniti City</p>
+          <p>A small family kitchen serving fish and rice at lunch and dinner.</p>
+        </div>
+      </article>
+      <article class="card card-row restaurant" data-cuisine="local">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M9 3h2v10H9zM6 3h2v7H6zM12 3h2v7h-2zM9 13h2v16H9z"/><path d="M21 3c3 0 5 3 5 7s-2 6-4 6v13h-2V16c-2 0-4-2-4-6s2-7 5-7z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Volcano Road Kitchen</h3>
+            <p class="rate">$</p>
+          </div>
+          <p class="meta">Local fish and rice · Interior</p>
+          <p>A roadside dining room on the way to the volcano, popular with hiking groups.</p>
+        </div>
+      </article>
+      <article class="card card-row restaurant" data-cuisine="local">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M9 3h2v10H9zM6 3h2v7H6zM12 3h2v7h-2zM9 13h2v16H9z"/><path d="M21 3c3 0 5 3 5 7s-2 6-4 6v13h-2V16c-2 0-4-2-4-6s2-7 5-7z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Nane's Fish and Rice</h3>
+            <p class="rate">$</p>
+          </div>
+          <p class="meta">Local fish and rice · Merriton Landing</p>
+          <p>A counter-service local kitchen open late on the north side of the bay.</p>
+        </div>
+      </article>
+      <article class="card card-row restaurant" data-cuisine="american">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M9 3h2v10H9zM6 3h2v7H6zM12 3h2v7h-2zM9 13h2v16H9z"/><path d="M21 3c3 0 5 3 5 7s-2 6-4 6v13h-2V16c-2 0-4-2-4-6s2-7 5-7z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>The Landing Grill</h3>
+            <p class="rate">$$</p>
+          </div>
+          <p class="meta">American style · Merriton Landing</p>
+          <p>American-style burgers, steaks, and salads, with a children's menu.</p>
+        </div>
+      </article>
+      <article class="card card-row restaurant" data-cuisine="american">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M9 3h2v10H9zM6 3h2v7H6zM12 3h2v7h-2zM9 13h2v16H9z"/><path d="M21 3c3 0 5 3 5 7s-2 6-4 6v13h-2V16c-2 0-4-2-4-6s2-7 5-7z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Bayside Diner</h3>
+            <p class="rate">$</p>
+          </div>
+          <p class="meta">American style · Taniti City</p>
+          <p>Breakfast all day, American style, near the bus stops on Harbor Road.</p>
+        </div>
+      </article>
+      <article class="card card-row restaurant" data-cuisine="american">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M9 3h2v10H9zM6 3h2v7H6zM12 3h2v7h-2zM9 13h2v16H9z"/><path d="M21 3c3 0 5 3 5 7s-2 6-4 6v13h-2V16c-2 0-4-2-4-6s2-7 5-7z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Merriton Brewhouse</h3>
+            <p class="rate">$$</p>
+          </div>
+          <p class="meta">American style · Merriton Landing</p>
+          <p>The island's microbrewery, with American pub food. Alcohol is not served between midnight and 9:00 a.m.</p>
+        </div>
+      </article>
+      <article class="card card-row restaurant" data-cuisine="asian">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M9 3h2v10H9zM6 3h2v7H6zM12 3h2v7h-2zM9 13h2v16H9z"/><path d="M21 3c3 0 5 3 5 7s-2 6-4 6v13h-2V16c-2 0-4-2-4-6s2-7 5-7z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Pacific Spice</h3>
+            <p class="rate">$$</p>
+          </div>
+          <p class="meta">Pan-Asian · Taniti City</p>
+          <p>Pan-Asian plates for sharing, in the native-architecture quarter.</p>
+        </div>
+      </article>
+      <article class="card card-row restaurant" data-cuisine="asian">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M9 3h2v10H9zM6 3h2v7H6zM12 3h2v7h-2zM9 13h2v16H9z"/><path d="M21 3c3 0 5 3 5 7s-2 6-4 6v13h-2V16c-2 0-4-2-4-6s2-7 5-7z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Rainforest Noodle Bar</h3>
+            <p class="rate">$</p>
+          </div>
+          <p class="meta">Pan-Asian · Merriton Landing</p>
+          <p>Noodles and dumplings, quick service, open for lunch and dinner.</p>
+        </div>
+      </article>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap section">
+    <h2>Groceries and supplies</h2>
+    <div class="grid grid-3">
+      <article class="panel">
+        <h3>Two supermarkets</h3>
+        <p>Full-size supermarkets in Taniti City, useful if your lodging has a kitchen.</p>
+      </article>
+      <article class="panel">
+        <h3>Two grocery stores</h3>
+        <p>Smaller neighborhood grocery stores for daily items.</p>
+      </article>
+      <article class="panel">
+        <h3>One 24-hour convenience store</h3>
+        <p>Open around the clock, although alcohol cannot be sold between midnight and
+           9:00 a.m.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand">Visit Taniti</p>
+      <p>Tanitian Ministry of Tourism<br>Visitor Center, Harbor Road, Taniti City</p>
+    </div>
+    <div>
+      <p class="footer-head">Questions before you travel?</p>
+      <p><a href="contact.html">Contact the visitor center</a><br>
+         <a href="essentials.html">Read the travel essentials</a><br>
+         <a href="book.html">Book your trip</a></p>
+    </div>
+    <div>
+      <p class="footer-head">Visitor center hours</p>
+      <p>Open daily, 8:00 a.m. to 6:00 p.m.<br>
+         Phone: (808) 555-0142<br>
+         Email: <a href="mailto:visitorinfo@visittaniti.example">visitorinfo@visittaniti.example</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-note">
+    <p>Prototype website created for a user experience design project. Rates, business names, and
+       contact details are illustrative.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

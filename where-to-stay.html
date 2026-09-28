@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where to stay on Taniti | Visit Taniti</title>
+<meta name="description" content="Compare Taniti lodging by type and nightly rate, from the city hostel to the four-star resort.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html"><span class="brand-mark">T</span>Visit Taniti</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-bars" aria-hidden="true"></span> Menu
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="things-to-do.html">Things to Do</a></li>
+          <li><a href="where-to-stay.html" class="is-current" aria-current="page">Where to Stay</a></li>
+          <li><a href="dining.html">Dining</a></li>
+          <li><a href="getting-around.html">Getting Around</a></li>
+          <li><a href="essentials.html">Travel Essentials</a></li>
+          <li><a href="book.html">Book Your Trip</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero hero-small">
+  <div class="wrap">
+    <h1>Where to stay</h1>
+    <p class="lead">Every kind of lodging on the island, with nightly rates. All lodging on Taniti is regulated and regularly inspected by the Tanitian government.</p>
+    
+  </div>
+</section>
+<section class="wrap section">
+  <form class="filters" id="lodging-filters" aria-label="Filter lodging">
+    <div class="field">
+      <label for="type-filter">Lodging type</label>
+      <select id="type-filter">
+        <option value="all">All types</option>
+        <option value="hotel">Hotel</option>
+        <option value="resort">Resort</option>
+        <option value="bnb">Bed and breakfast</option>
+        <option value="condo">Private condominium</option>
+        <option value="house">Beach house</option>
+        <option value="hostel">Hostel</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="rate-filter">Maximum nightly rate</label>
+      <select id="rate-filter">
+        <option value="10000">Any rate</option>
+        <option value="50">Up to $50</option>
+        <option value="100">Up to $100</option>
+        <option value="150">Up to $150</option>
+        <option value="200">Up to $200</option>
+        <option value="350">Up to $350</option>
+      </select>
+    </div>
+    <p class="filter-count" id="lodging-count" role="status"></p>
+  </form>
+  <div class="stack" id="lodging-list">
+      <article class="card card-row lodging" data-type="resort" data-rate="325">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M3 9h3v8h22v6h-3v-3H6v3H3z"/><path d="M9 11h16v4H9z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Taniti Bay Resort</h3>
+            <p class="rate">$325<span> per night</span></p>
+          </div>
+          <p class="meta">Resort · Taniti City · Yellow Leaf Bay</p>
+          <p>The island's one large four-star resort, on the bay with direct beach access, two restaurants, and an airport shuttle.</p>
+          <a class="btn btn-primary" href="book.html?lodging=Taniti%20Bay%20Resort">
+            Book this lodging</a>
+        </div>
+      </article>
+      <article class="card card-row lodging" data-type="house" data-rate="260">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M3 9h3v8h22v6h-3v-3H6v3H3z"/><path d="M9 11h16v4H9z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Sunset Beach House</h3>
+            <p class="rate">$260<span> per night</span></p>
+          </div>
+          <p class="meta">Beach house · West coast · Private beach</p>
+          <p>A three-bedroom beach house for larger parties, a twenty-minute drive from Taniti City.</p>
+          <a class="btn btn-primary" href="book.html?lodging=Sunset%20Beach%20House">
+            Book this lodging</a>
+        </div>
+      </article>
+      <article class="card card-row lodging" data-type="condo" data-rate="180">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M3 9h3v8h22v6h-3v-3H6v3H3z"/><path d="M9 11h16v4H9z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Palm Row Condominiums</h3>
+            <p class="rate">$180<span> per night</span></p>
+          </div>
+          <p class="meta">Private condominium · Taniti City · Two blocks from the beach</p>
+          <p>Private condominiums with a kitchen, suited to families staying a week or longer.</p>
+          <a class="btn btn-primary" href="book.html?lodging=Palm%20Row%20Condominiums">
+            Book this lodging</a>
+        </div>
+      </article>
+      <article class="card card-row lodging" data-type="hotel" data-rate="145">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M3 9h3v8h22v6h-3v-3H6v3H3z"/><path d="M9 11h16v4H9z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Harborview Family Hotel</h3>
+            <p class="rate">$145<span> per night</span></p>
+          </div>
+          <p class="meta">Hotel · Taniti City · Harbor Road</p>
+          <p>A family-owned hotel near the harbor and the bus routes, with connecting rooms for families and free breakfast.</p>
+          <a class="btn btn-primary" href="book.html?lodging=Harborview%20Family%20Hotel">
+            Book this lodging</a>
+        </div>
+      </article>
+      <article class="card card-row lodging" data-type="hotel" data-rate="120">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M3 9h3v8h22v6h-3v-3H6v3H3z"/><path d="M9 11h16v4H9z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Yellow Leaf Inn</h3>
+            <p class="rate">$120<span> per night</span></p>
+          </div>
+          <p class="meta">Hotel · Merriton Landing</p>
+          <p>A small, family-owned hotel on the north side of the bay, walking distance from the restaurants and galleries of Merriton Landing.</p>
+          <a class="btn btn-primary" href="book.html?lodging=Yellow%20Leaf%20Inn">
+            Book this lodging</a>
+        </div>
+      </article>
+      <article class="card card-row lodging" data-type="bnb" data-rate="110">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M3 9h3v8h22v6h-3v-3H6v3H3z"/><path d="M9 11h16v4H9z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Rainforest Edge Bed and Breakfast</h3>
+            <p class="rate">$110<span> per night</span></p>
+          </div>
+          <p class="meta">Bed and breakfast · Interior · Rainforest edge</p>
+          <p>Four rooms at the edge of the rainforest, with breakfast included and trailheads nearby.</p>
+          <a class="btn btn-primary" href="book.html?lodging=Rainforest%20Edge%20Bed%20and%20Breakfast">
+            Book this lodging</a>
+        </div>
+      </article>
+      <article class="card card-row lodging" data-type="bnb" data-rate="95">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M3 9h3v8h22v6h-3v-3H6v3H3z"/><path d="M9 11h16v4H9z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Merriton Landing Bed and Breakfast</h3>
+            <p class="rate">$95<span> per night</span></p>
+          </div>
+          <p class="meta">Bed and breakfast · Merriton Landing</p>
+          <p>A newer bed and breakfast a short walk from the bay, with breakfast included.</p>
+          <a class="btn btn-primary" href="book.html?lodging=Merriton%20Landing%20Bed%20and%20Breakfast">
+            Book this lodging</a>
+        </div>
+      </article>
+      <article class="card card-row lodging" data-type="hostel" data-rate="35">
+        <div class="card-art"><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M3 9h3v8h22v6h-3v-3H6v3H3z"/><path d="M9 11h16v4H9z"/></svg></div>
+        <div class="card-body">
+          <div class="card-head">
+            <h3>Taniti City Hostel</h3>
+            <p class="rate">$35<span> per night</span></p>
+          </div>
+          <p class="meta">Hostel · Taniti City · City center</p>
+          <p>Shared and private rooms in the city center, the least expensive lodging on the island.</p>
+          <a class="btn btn-primary" href="book.html?lodging=Taniti%20City%20Hostel">
+            Book this lodging</a>
+        </div>
+      </article>
+  </div>
+  <p class="empty" id="lodging-empty" hidden>No lodging matches those filters. Try a higher
+    nightly rate.</p>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand">Visit Taniti</p>
+      <p>Tanitian Ministry of Tourism<br>Visitor Center, Harbor Road, Taniti City</p>
+    </div>
+    <div>
+      <p class="footer-head">Questions before you travel?</p>
+      <p><a href="contact.html">Contact the visitor center</a><br>
+         <a href="essentials.html">Read the travel essentials</a><br>
+         <a href="book.html">Book your trip</a></p>
+    </div>
+    <div>
+      <p class="footer-head">Visitor center hours</p>
+      <p>Open daily, 8:00 a.m. to 6:00 p.m.<br>
+         Phone: (808) 555-0142<br>
+         Email: <a href="mailto:visitorinfo@visittaniti.example">visitorinfo@visittaniti.example</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-note">
+    <p>Prototype website created for a user experience design project. Rates, business names, and
+       contact details are illustrative.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

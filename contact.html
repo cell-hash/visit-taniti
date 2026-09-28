@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact the Taniti visitor center | Visit Taniti</title>
+<meta name="description" content="Phone, email, and address for the Tanitian visitor center, plus a message form.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html"><span class="brand-mark">T</span>Visit Taniti</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-bars" aria-hidden="true"></span> Menu
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="things-to-do.html">Things to Do</a></li>
+          <li><a href="where-to-stay.html">Where to Stay</a></li>
+          <li><a href="dining.html">Dining</a></li>
+          <li><a href="getting-around.html">Getting Around</a></li>
+          <li><a href="essentials.html">Travel Essentials</a></li>
+          <li><a href="book.html">Book Your Trip</a></li>
+          <li><a href="contact.html" class="is-current" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero hero-small">
+  <div class="wrap">
+    <h1>Contact us</h1>
+    <p class="lead">Ask us anything before you travel. We answer messages within one business day.</p>
+    
+  </div>
+</section>
+<section class="wrap section">
+  <div class="grid grid-2">
+    <article class="panel panel-contact">
+      <h2>Taniti Visitor Center</h2>
+      <dl class="contact-list">
+        <dt><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><path d="M7 3h6l3 7-4 2c1 4 4 7 8 8l2-4 7 3v6c0 2-2 3-4 3C14 28 4 18 4 7 4 5 5 3 7 3z"/></svg> Phone</dt>
+        <dd><a href="tel:+18085550142">(808) 555-0142</a></dd>
+        <dt><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15 13h2v11h-2zM15 8h2v3h-2z"/></svg> Email</dt>
+        <dd><a href="mailto:visitorinfo@visittaniti.example">visitorinfo@visittaniti.example</a></dd>
+        <dt><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><circle cx="16" cy="5" r="3"/><path d="M15 9h3l3 7-3 1-2-3-1 6 3 8h-3l-4-8 1-9z"/></svg> Address</dt>
+        <dd>Visitor Center, Harbor Road, Taniti City, Taniti</dd>
+        <dt><svg class="icon" viewBox="0 0 32 32" role="img" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15 13h2v11h-2zM15 8h2v3h-2z"/></svg> Hours</dt>
+        <dd>Open daily, 8:00 a.m. to 6:00 p.m.</dd>
+      </dl>
+      <div class="callout">
+        <h3>If you need medical care</h3>
+        <p>Taniti has one hospital and several clinics. The hospital has many multilingual
+           employees. In an emergency on the island, go directly to the hospital in Taniti City.</p>
+      </div>
+    </article>
+    <article class="panel">
+      <h2>Send us a message</h2>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="field">
+          <label for="c-name">Your name <span class="req">(required)</span></label>
+          <input type="text" id="c-name" name="c-name" autocomplete="name" required>
+          <p class="error" data-error-for="c-name" hidden></p>
+        </div>
+        <div class="field">
+          <label for="c-email">Email address <span class="req">(required)</span></label>
+          <input type="email" id="c-email" name="c-email" autocomplete="email" required>
+          <p class="error" data-error-for="c-email" hidden></p>
+        </div>
+        <div class="field">
+          <label for="c-topic">What is your question about?</label>
+          <select id="c-topic" name="c-topic">
+            <option>Activities and tours</option>
+            <option>Lodging</option>
+            <option>Getting to and around the island</option>
+            <option>National holidays and closures</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="c-message">Message <span class="req">(required)</span></label>
+          <textarea id="c-message" name="c-message" rows="5" required></textarea>
+          <p class="error" data-error-for="c-message" hidden></p>
+        </div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+      </form>
+      <div class="confirmation" id="contact-confirmation" role="status" hidden>
+        <h3>Thank you — your message has been sent</h3>
+        <p id="contact-confirmation-line"></p>
+        <p>We reply within one business day.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand">Visit Taniti</p>
+      <p>Tanitian Ministry of Tourism<br>Visitor Center, Harbor Road, Taniti City</p>
+    </div>
+    <div>
+      <p class="footer-head">Questions before you travel?</p>
+      <p><a href="contact.html">Contact the visitor center</a><br>
+         <a href="essentials.html">Read the travel essentials</a><br>
+         <a href="book.html">Book your trip</a></p>
+    </div>
+    <div>
+      <p class="footer-head">Visitor center hours</p>
+      <p>Open daily, 8:00 a.m. to 6:00 p.m.<br>
+         Phone: (808) 555-0142<br>
+         Email: <a href="mailto:visitorinfo@visittaniti.example">visitorinfo@visittaniti.example</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-note">
+    <p>Prototype website created for a user experience design project. Rates, business names, and
+       contact details are illustrative.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

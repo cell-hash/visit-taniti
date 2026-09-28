@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book your trip | Visit Taniti</title>
+<meta name="description" content="Request a booking for lodging, activities, and airport transportation on Taniti.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html"><span class="brand-mark">T</span>Visit Taniti</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-bars" aria-hidden="true"></span> Menu
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="things-to-do.html">Things to Do</a></li>
+          <li><a href="where-to-stay.html">Where to Stay</a></li>
+          <li><a href="dining.html">Dining</a></li>
+          <li><a href="getting-around.html">Getting Around</a></li>
+          <li><a href="essentials.html">Travel Essentials</a></li>
+          <li><a href="book.html" class="is-current" aria-current="page">Book Your Trip</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero hero-small">
+  <div class="wrap">
+    <h1>Book your trip</h1>
+    <p class="lead">One form for lodging, activities, and your ride from the airport. The visitor center confirms every request by email within one business day.</p>
+    
+  </div>
+</section>
+<section class="wrap section narrow">
+  <form class="booking-form" id="booking-form" novalidate>
+    <p class="form-intro" id="prefill-note" hidden></p>
+    <div class="field-grid">
+      <div class="field">
+        <label for="name">Full name <span class="req">(required)</span></label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+        <p class="error" data-error-for="name" hidden></p>
+      </div>
+      <div class="field">
+        <label for="email">Email address <span class="req">(required)</span></label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+        <p class="error" data-error-for="email" hidden></p>
+      </div>
+      <div class="field">
+        <label for="arrival">Arrival date <span class="req">(required)</span></label>
+        <input type="date" id="arrival" name="arrival" required>
+        <p class="error" data-error-for="arrival" hidden></p>
+      </div>
+      <div class="field">
+        <label for="nights">Number of nights</label>
+        <input type="number" id="nights" name="nights" min="1" max="30" value="6">
+      </div>
+      <div class="field">
+        <label for="party">People in your party <span class="req">(required)</span></label>
+        <input type="number" id="party" name="party" min="1" max="20" value="2" required>
+        <p class="error" data-error-for="party" hidden></p>
+      </div>
+      <div class="field">
+        <label for="lodging">Lodging</label>
+        <select id="lodging" name="lodging">
+          <option value="">No lodging needed</option>
+          <option value="Taniti Bay Resort">Taniti Bay Resort — $325 per night</option>
+          <option value="Sunset Beach House">Sunset Beach House — $260 per night</option>
+          <option value="Palm Row Condominiums">Palm Row Condominiums — $180 per night</option>
+          <option value="Harborview Family Hotel">Harborview Family Hotel — $145 per night</option>
+          <option value="Yellow Leaf Inn">Yellow Leaf Inn — $120 per night</option>
+          <option value="Rainforest Edge Bed and Breakfast">Rainforest Edge Bed and Breakfast — $110 per night</option>
+          <option value="Merriton Landing Bed and Breakfast">Merriton Landing Bed and Breakfast — $95 per night</option>
+          <option value="Taniti City Hostel">Taniti City Hostel — $35 per night</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="activity">Activity</label>
+        <select id="activity" name="activity">
+          <option value="">No activity yet</option>
+          <option value="Guided volcano hike">Guided volcano hike</option>
+          <option value="Yellow Leaf Bay beaches">Yellow Leaf Bay beaches</option>
+          <option value="Rainforest zip-line tour">Rainforest zip-line tour</option>
+          <option value="Guided rainforest hike">Guided rainforest hike</option>
+          <option value="Snorkeling trip">Snorkeling trip</option>
+          <option value="Chartered fishing tour">Chartered fishing tour</option>
+          <option value="Taniti History Museum">Taniti History Museum</option>
+          <option value="Island boat or bus tour">Island boat or bus tour</option>
+          <option value="Helicopter island flight">Helicopter island flight</option>
+          <option value="Merriton Landing after dark">Merriton Landing after dark</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="transfer">Airport transportation</label>
+        <select id="transfer" name="transfer">
+          <option value="">I will arrange my own</option>
+          <option value="Airport shuttle">Hotel shuttle from the airport</option>
+          <option value="Taxi">Taxi from the airport</option>
+          <option value="Rental car">Rental car from the airport agency</option>
+        </select>
+      </div>
+    </div>
+    <div class="field">
+      <label for="notes">Anything we should know?</label>
+      <textarea id="notes" name="notes" rows="3"
+        placeholder="Ages of children, accessibility needs, dietary needs"></textarea>
+    </div>
+    <button class="btn btn-primary btn-big" type="submit">Request booking</button>
+    <p class="form-help">Nothing is charged now. This prototype does not send real bookings.</p>
+  </form>
+
+  <div class="confirmation" id="confirmation" role="status" hidden>
+    <h2>Your booking request is in</h2>
+    <p id="confirmation-line"></p>
+    <dl class="summary" id="confirmation-summary"></dl>
+    <p>A confirmation has been sent to <strong id="confirmation-email"></strong>. The visitor
+       center replies within one business day.</p>
+    <p class="confirmation-actions">
+      <a class="btn btn-quiet" href="things-to-do.html">Add another activity</a>
+      <a class="btn btn-quiet" href="index.html">Back to the home page</a>
+    </p>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand">Visit Taniti</p>
+      <p>Tanitian Ministry of Tourism<br>Visitor Center, Harbor Road, Taniti City</p>
+    </div>
+    <div>
+      <p class="footer-head">Questions before you travel?</p>
+      <p><a href="contact.html">Contact the visitor center</a><br>
+         <a href="essentials.html">Read the travel essentials</a><br>
+         <a href="book.html">Book your trip</a></p>
+    </div>
+    <div>
+      <p class="footer-head">Visitor center hours</p>
+      <p>Open daily, 8:00 a.m. to 6:00 p.m.<br>
+         Phone: (808) 555-0142<br>
+         Email: <a href="mailto:visitorinfo@visittaniti.example">visitorinfo@visittaniti.example</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-note">
+    <p>Prototype website created for a user experience design project. Rates, business names, and
+       contact details are illustrative.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

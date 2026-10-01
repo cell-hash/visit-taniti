@@ -237,6 +237,63 @@ a {
   margin: 0 10px 10px 0;
 }
 
+/* ---------- contact strip above the navigation ----------
+   Added after guerrilla testing: a tester looked for a phone number at the top
+   of the page and had to dig into the footer to find one. */
+
+.topbar {
+  background-color: var(--ink);
+  color: #dbe6ea;
+  font-size: 14px;
+}
+
+.topbar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  justify-content: space-between;
+  padding: 7px 20px;
+}
+
+.topbar a {
+  color: #a8dbe4;
+  font-weight: bold;
+}
+
+.topbar a:hover {
+  color: #ffd9ab;
+}
+
+/* ---------- hero illustration ----------
+   Added after guerrilla testing: testers said nothing on the landing screen
+   drew them in. Drawn in SVG rather than photographed, so the prototype still
+   contains no third-party images. */
+
+.hero-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+@media (min-width: 880px) {
+  .hero-grid {
+    grid-template-columns: 1.05fr 1fr;
+  }
+}
+
+.hero-art {
+  margin: 0;
+}
+
+.scene {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 3px solid #fff;
+}
+
 /* ---------- buttons ---------- */
 
 .btn {

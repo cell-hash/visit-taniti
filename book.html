@@ -10,6 +10,13 @@
 <body>
 <a class="skip" href="#main">Skip to main content</a>
 <header class="site-header">
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span>Taniti Visitor Center &middot; open daily 8:00 a.m. to 6:00 p.m.</span>
+      <span><a href="tel:+18085550142">Call (808) 555-0142</a> &middot;
+            <a href="contact.html">Send a message</a></span>
+    </div>
+  </div>
   <div class="bar">
     <a class="brand" href="index.html">Visit Taniti</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -20,7 +27,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="things-to-do.html">Things to Do</a></li>
           <li><a href="where-to-stay.html">Where to Stay</a></li>
-          <li><a href="dining.html">Dining</a></li>
+          <li><a href="dining.html">Dining and Groceries</a></li>
           <li><a href="getting-around.html">Getting Around</a></li>
           <li><a href="essentials.html">Travel Essentials</a></li>
           <li><a href="book.html" class="is-current" aria-current="page">Book Your Trip</a></li>
@@ -31,9 +38,12 @@
 </header>
 <main id="main">
 <section class="hero hero-small">
-  <div class="wrap">
-    <h1>Book your trip</h1>
-    <p class="lead">One form for lodging, activities, and your ride from the airport. The visitor center confirms every request by email within one business day.</p>
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Book your trip</h1>
+      <p class="lead">One form for lodging, activities, and your ride from the airport. The visitor center confirms every request by email within one business day.</p>
+      
+    </div>
     
   </div>
 </section>
@@ -66,7 +76,7 @@
         <p class="error" data-error-for="party" hidden></p>
       </div>
       <div class="field">
-        <label for="lodging">Lodging</label>
+        <label for="lodging">Lodging <span class="req">(optional)</span></label>
         <select id="lodging" name="lodging">
           <option value="">No lodging needed</option>
           <option value="Taniti Bay Resort">Taniti Bay Resort — $325 per night</option>
@@ -80,7 +90,7 @@
         </select>
       </div>
       <div class="field">
-        <label for="activity">Activity</label>
+        <label for="activity">Activity <span class="req">(optional)</span></label>
         <select id="activity" name="activity">
           <option value="">No activity yet</option>
           <option value="Guided volcano hike">Guided volcano hike</option>
@@ -93,10 +103,12 @@
           <option value="Island boat or bus tour">Island boat or bus tour</option>
           <option value="Helicopter island flight">Helicopter island flight</option>
           <option value="Merriton Landing after dark">Merriton Landing after dark</option>
+          <option value="Nine-hole golf course">Nine-hole golf course</option>
         </select>
       </div>
       <div class="field">
-        <label for="transfer">Airport transportation</label>
+        <label for="transfer">Airport transportation <span class="req">(optional, you can
+          decide later)</span></label>
         <select id="transfer" name="transfer">
           <option value="">I will arrange my own</option>
           <option value="Airport shuttle">Hotel shuttle from the airport</option>
